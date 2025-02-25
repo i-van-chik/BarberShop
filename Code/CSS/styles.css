@@ -60,7 +60,7 @@ iframe {
     cursor: pointer;
 }
 
-/* Герой секция */
+/* Герой-секция */
 #hero {
     background-image: url('../../Images/hero.jpg');
     background-size: cover;
@@ -147,7 +147,7 @@ footer {
     border-radius: 10px;
 }
 
-/* Адаптивный дизайн */
+/* Адаптивный дизайн для экранов до 768px */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -208,5 +208,70 @@ footer {
 
     .hero-content p {
         font-size: 1rem;
+    }
+}
+
+/* Адаптивный дизайн для экранов до 480px (включая 370px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        padding-left: 2px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .burger-menu {
+        font-size: 20px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 14px;
+    }
+
+    #hero {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .service, .master {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .gallery-grid img {
+        width: 95%;
+        height: auto;
+    }
+
+    #contacts .map {
+        height: 300px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+    .masters-list{
+        margin-right: 22px;
+    }
+    .services-list{
+        margin-right: 22px;
     }
 }
