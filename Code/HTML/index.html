@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп "Сперма"</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Барбершоп "Сперма"</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#masters">Мастера</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="burger-menu" aria-label="Меню">☰</button>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content rounded">
+                <h1>Добро пожаловать в барбершоп "Сперма"</h1>
+                <p>Место, где стиль встречается с традициями</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Барбершоп "Сперма" — это место, где вы можете получить качественную стрижку и бритье в классическом стиле. Наши мастера — профессионалы своего дела, которые любят свою работу и заботятся о каждом клиенте.</p>
+        </section>
+        <section id="services">
+            <h2>Услуги</h2>
+            <div class="services-list">
+                <div class="service rounded">
+                    <h3>Стрижка</h3>
+                    <p>Классическая стрижка с использованием ножниц и машинки.</p>
+                    <p>Цена: 1000 руб.</p>
+                </div>
+                <div class="service rounded">
+                    <h3>Бритье</h3>
+                    <p>Традиционное бритье опасной бритвой.</p>
+                    <p>Цена: 800 руб.</p>
+                </div>
+                <div class="service rounded">
+                    <h3>Укладка</h3>
+                    <p>Стайлинг волос с использованием профессиональных средств.</p>
+                    <p>Цена: 500 руб.</p>
+                </div>
+            </div>
+        </section>
+        <section id="masters">
+            <h2>Наши мастера</h2>
+            <div class="masters-list">
+                <div class="master rounded">
+                    <img src="../../Images/barber1.jpg" alt="Мастер 1" class="rounded-img">
+                    <h3>Иван Иванов</h3>
+                    <p>Опыт работы: 5 лет</p>
+                    <p>Специализация: классические стрижки</p>
+                </div>
+                <div class="master rounded">
+                    <img src="../../Images/barber2.jpg" alt="Мастер 2" class="rounded-img">
+                    <h3>Петр Петров</h3>
+                    <p>Опыт работы: 7 лет</p>
+                    <p>Специализация: бритье опасной бритвой</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <img src="../../Images/photo1.jpg" alt="Фото 1" class="rounded-img">
+                <img src="../../Images/photo2.jpg" alt="Фото 2" class="rounded-img">
+                <img src="../../Images/photo3.jpg" alt="Фото 3" class="rounded-img">
+                <img src="../../Images/photo4.jpg" alt="Фото 4" class="rounded-img">
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Адрес: Залупа Минска</p>
+            <p>Телефон: +375(25)525-20-00</p>
+            <p>Email: zalupa@mail.ru</p>
+            <div class="map rounded">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13308.051290298696!2d27.545399144007153!3d53.868590274674716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd03ac66377bd%3A0x6bad7ecfd968b093!2z0JDRjdGA0L7QtNGA0L7QvNC90LDRjyDRg9C7Liwg0JzQuNC90YHQuiwg0JzQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sby!4v1740504336348!5m2!1sru!2sby" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Барбершоп "Сперма"</p>
+        <p>Адрес: Залупа Минска</p>
+        <p>Телефон: +375(25)525-20-00</p>
+        <p>© 2025 Все права защищены</p>
+    </footer>
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

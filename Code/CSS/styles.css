@@ -1,0 +1,265 @@
+/* Общие стили */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Всегда показывать полосу прокрутки */
+}
+
+/* Шапка */
+header {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Герой секция */
+#hero {
+    background-image: url('../../Images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+/* Общие стили для секций */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Услуги и мастера */
+.services-list, .masters-list, .gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service, .master {
+    background-color: #222;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.master img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Галерея */
+.gallery-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* Контакты */
+#contacts .map {
+    width: 100%;
+    height: 400px;
+    background-color: #333; /* Заглушка для карты */
+}
+
+/* Подвал */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Закругленные углы */
+.rounded {
+    border-radius: 15px;
+}
+
+.rounded-img {
+    border-radius: 10px;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #111;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .services-list, .masters-list, .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .master {
+        width: 80%;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .service, .master {
+        width: 90%;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 20px 5px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        font-size: 16px;
+    }
+
+    .service, .master {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+}
