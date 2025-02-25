@@ -190,7 +190,7 @@ footer {
     }
 
     .gallery-grid img {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
@@ -208,58 +208,5 @@ footer {
 
     .hero-content p {
         font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 18px;
-    }
-
-    .service, .master {
-        width: 90%;
-    }
-
-    .gallery-grid img {
-        width: 100%;
-        height: auto;
-    }
-
-    section {
-        padding: 20px 5px;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-content p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 320px) {
-    .logo {
-        font-size: 16px;
-    }
-
-    .service, .master {
-        width: 95%;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    .hero-content h1 {
-        font-size: 1.2rem;
-    }
-
-    .hero-content p {
-        font-size: 0.8rem;
     }
 }
