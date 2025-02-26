@@ -6,10 +6,14 @@ body {
     margin: 0;
     padding: 0;
     overflow-y: scroll; /* Всегда показывать полосу прокрутки */
-}
-
-/* Шапка */
-header {
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Шапка */
+  header {
     background-color: #111;
     padding: 20px;
     display: flex;
@@ -19,49 +23,48 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-.nav-menu {
+  }
+  
+  .nav-menu {
     display: flex;
-    margin-right: 40px;
-}
-
-.nav-menu ul {
+  }
+  
+  .nav-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.nav-menu ul li {
+  }
+  
+  .nav-menu ul li {
     margin-left: 20px;
-}
-
-.nav-menu ul li a {
+  }
+  
+  .nav-menu ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-iframe {
+  }
+  
+  iframe {
     border-radius: 10px;
-}
-
-.burger-menu {
+  }
+  
+  .burger-menu {
     display: none;
     background: none;
     border: none;
     color: #fff;
     font-size: 24px;
     cursor: pointer;
-}
-
-/* Герой-секция */
-#hero {
+  }
+  
+  /* Герой-секция */
+  #hero {
     background-image: url('../../Images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -70,211 +73,224 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.hero-content {
+  }
+  
+  .hero-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-}
-
-.hero-content h1 {
+  }
+  
+  .hero-content h1 {
     font-size: 48px;
     margin: 0;
-}
-
-.hero-content p {
+  }
+  
+  .hero-content p {
     font-size: 24px;
-}
-
-/* Общие стили для секций */
-section {
+  }
+  
+  /* Общие стили для секций */
+  section {
     padding: 60px 20px;
-}
-
-h2 {
+  }
+  
+  h2 {
     text-align: center;
     margin-bottom: 40px;
-}
-
-/* Услуги и мастера */
-.services-list, .masters-list, .gallery-grid {
+  }
+  
+  /* Услуги и мастера */
+  .services-list,
+  .masters-list,
+  .gallery-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-.service, .master {
+  }
+  
+  .service,
+  .master {
     background-color: #222;
     padding: 20px;
     margin: 10px;
     width: 300px;
     text-align: center;
-}
-
-.master img {
+  }
+  
+  .master img {
     max-width: 100%;
     height: auto;
-}
-
-/* Галерея */
-.gallery-grid img {
+  }
+  
+  /* Галерея */
+  .gallery-grid img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin: 10px;
-}
-
-/* Контакты */
-#contacts .map {
+  }
+  
+  /* Контакты */
+  #contacts .map {
     width: 100%;
     height: 400px;
     background-color: #333; /* Заглушка для карты */
-}
-
-/* Подвал */
-footer {
+  }
+  
+  /* Подвал */
+  footer {
     background-color: #111;
     padding: 20px;
     text-align: center;
-}
-
-/* Закругленные углы */
-.rounded {
+  }
+  
+  /* Закругленные углы */
+  .rounded {
     border-radius: 15px;
-}
-
-.rounded-img {
+  }
+  
+  .rounded-img {
     border-radius: 10px;
-}
-
-/* Адаптивный дизайн для экранов до 768px */
-@media (max-width: 768px) {
+  }
+  
+  /* Адаптивный дизайн для экранов до 768px */
+  @media (max-width: 768px) {
     header {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .burger-menu {
-        display: block;
+      display: block;
     }
-
+  
     .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #111;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #111;
     }
-
+  
     .nav-menu.active {
-        display: flex;
+      display: flex;
+      justify-content: center;
     }
-
+  
     .nav-menu ul {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 9px;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .nav-menu ul li {
-        margin: 10px 0;
+      margin: 10px 0;
     }
-
-    .services-list, .masters-list, .gallery-grid {
-        flex-direction: column;
-        align-items: center;
+  
+    .services-list,
+    .masters-list,
+    .gallery-grid {
+      flex-direction: column;
+      align-items: center;
     }
-
-    .service, .master {
-        width: 80%;
+  
+    .service,
+    .master {
+      width: 80%;
     }
-
+  
     .gallery-grid img {
-        width: 90%;
-        height: auto;
+      width: calc(100% - 40px);
+      height: auto;
     }
-
+  
     section {
-        padding: 40px 10px;
+      padding: 40px 10px;
     }
-
+  
     h2 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
+  
     .hero-content h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-
+  
     .hero-content p {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-}
-
-/* Адаптивный дизайн для экранов до 480px (включая 370px) */
-@media (max-width: 480px) {
+  }
+  
+  /* Адаптивный дизайн для экранов до 480px (включая 370px) */
+  @media (max-width: 480px) {
     header {
-        padding: 10px;
-        padding-left: 2px;
+      padding: 10px;
+      padding-left: 2px;
     }
-
+  
     .logo {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
     .burger-menu {
-        font-size: 20px;
+      font-size: 20px;
     }
-
-    .nav-menu
-
+  
+    .nav-menu {
+      top: 60px;
+    }
+  
     .nav-menu ul li a {
-        font-size: 14px;
+      font-size: 14px;
+      margin-right: 8px;
     }
-
+  
     #hero {
-        height: 80vh;
+      height: 80vh;
     }
-
+  
     .hero-content h1 {
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
-
+  
     .hero-content p {
-        font-size: 0.9rem;
+      font-size: 0.9rem;
     }
-
+  
     section {
-        padding: 30px 10px;
+      padding: 30px 10px;
     }
-
+  
     h2 {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-
-    .service, .master {
-        width: 90%;
-        padding: 15px;
+  
+    .service,
+    .master {
+      width: 90%;
+      padding: 15px;
     }
-
+  
     .gallery-grid img {
-        width: 95%;
-        height: auto;
+      width: calc(100% - 20px);
+      height: auto;
     }
-
+  
     #contacts .map {
-        height: 300px;
+      height: 300px;
     }
-
+  
     footer {
-        padding: 15px;
-        font-size: 0.8rem;
+      padding: 15px;
+      font-size: 0.8rem;
     }
-    .masters-list{
-        margin-right: 22px;
+  
+    .masters-list {
+      width: 100%;
     }
-    .services-list{
-        margin-right: 22px;
+  
+    .services-list {
+      width: 100%;
     }
-}
+  }
+  
