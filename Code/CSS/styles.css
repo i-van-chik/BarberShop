@@ -160,10 +160,6 @@ body {
     header {
       flex-direction: column;
     }
-
-    main{
-      margin-top: 80px;
-    }
   
     .burger-menu {
       display: block;
@@ -232,10 +228,6 @@ body {
     header {
       padding: 10px;
       padding-left: 2px;
-    }
-
-    main{
-      margin-top: 60px;
     }
   
     .logo {
