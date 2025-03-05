@@ -8,7 +8,12 @@ body {
     overflow-y: scroll; /* Всегда показывать полосу прокрутки */
   }
 
-  
+  a{
+    pointer-events: none;
+    cursor: default;
+    color: #fff;
+    text-decoration: none;
+  }
   
   * {
     box-sizing: border-box;
@@ -159,6 +164,12 @@ body {
   @media (max-width: 768px) {
     header {
       flex-direction: column;
+    }
+
+    a{
+      text-decoration: underline;
+      pointer-events: all;
+      cursor: pointer;
     }
   
     .burger-menu {
